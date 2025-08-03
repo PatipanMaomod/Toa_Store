@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+.bakushin/
+.bakushin_env/
+*.egg-info/
+
+# Environment variables
+.env
+
+# Streamlit cache
+.streamlit/
+
+# Images (เก็บใน local เท่านั้น)
+product_images/
+
+# OS files
+.DS_Store
+Thumbs.db
