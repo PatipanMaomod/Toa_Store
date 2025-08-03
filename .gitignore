@@ -13,7 +13,7 @@ venv/
 .streamlit/
 
 # Images (เก็บใน local เท่านั้น)
-product_images/
+
 
 # OS files
 .DS_Store

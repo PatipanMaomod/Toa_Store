@@ -2,7 +2,6 @@ import streamlit as st
 import pymysql
 import os
 from dotenv import load_dotenv
-from pathlib import Path
 
 # โหลดค่าจาก .env
 load_dotenv()
@@ -49,7 +48,7 @@ else:
             st.write(f"จำนวนในสต็อก: {product['stock']} ชิ้น")
 
             image_path = product.get("image_path")
-            if image_path and Path(image_path).exists():
+            if image_path and (image_path.startswith("http://") or image_path.startswith("https://")):
                 st.image(image_path, use_container_width=True)
             else:
                 st.image("https://via.placeholder.com/150?text=No+Image", use_container_width=True)
