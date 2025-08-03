@@ -8,8 +8,6 @@ venv/
 .bakushin_env/
 *.egg-info/
 
-# Environment variables
-.env
 
 # Streamlit cache
 .streamlit/
